@@ -1,0 +1,83 @@
+00c4c4 morski
+70bfff blue
+ffe92f yellow
+b07cf7 purple
+80e1e1 form light
+00c4c4 form dark
+355b82 form border
+262626 footer color, footer bgc
+ff2b58 footer span
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-size: 15px;
+
+}
+h1{
+   font-size: 4em;
+}
+.container-fluid {
+   max-width: 1500px;
+   background-color: crimson;
+   padding: 0;
+   
+}
+.row{
+   padding: 5% 10%;
+   margin: 0;
+}
+
+#home{
+   background: url(../img/header-img.png) center no-repeat;
+   height: 1000px;
+   padding-top: 30%;
+}
+#about {
+   background-color: #00c4c4;
+   color: #fff;
+}
+
+.about{
+   padding-left: 5%;
+   margin-top: 5%;
+}
+
+
+#services {
+   background-color: #70bfff;
+   text-align: center;
+}
+
+footer{
+   color: #b9b9b9;
+   background-color: #262626;
+}
+footer .row{
+   padding: 2% 10%;
+}
+footer span{
+   color: #ff2b58;
+}
+
+
+
+/************ MEDIA QUERY ******************/
+@media (max-width: 991px){
+   .about{
+      text-align: center;
+   }
+   .row{
+      padding: 2%;
+   }
+}
+
+@media (max-width: 768px){
+   footer div, footer .text-right{
+      padding: 0.2em;
+      text-align: center;
+   }
+}
