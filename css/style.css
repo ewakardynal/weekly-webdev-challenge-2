@@ -7,34 +7,66 @@ b07cf7 purple
 355b82 form border
 262626 footer color, footer bgc
 ff2b58 footer span
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 body{
+   font-family: 'Raleway', sans-serif;
    font-size: 15px;
+   letter-spacing: 0.2px;
 
 }
 h1{
-   font-size: 4em;
+   font-size: 3em;
+   font-weight: 900;
+   padding: 0.2em 0;
+}
+h2{
+   font-size: 4.5em;
+   font-weight: 700;
+   padding: 0.2em 0;
+}
+h3{
+   font-size: 2em;
+   font-weight: 700;
 }
 .container-fluid {
    max-width: 1500px;
    background-color: crimson;
    padding: 0;
-   
 }
 .row{
    padding: 5% 10%;
    margin: 0;
 }
+.title{
+   text-align: center;
+}
+
+.btn{
+   text-transform: uppercase;
+   width: 200px;
+   height: 55px;
+   font-size: 1.2em;
+   line-height: 1em;
+   padding: 20px;
+}
+
+
 
 #home{
    background: url(../img/header-img.png) center no-repeat;
    height: 1000px;
-   padding-top: 30%;
+   padding-top: 20%;
+}
+#home .btn{
+   background-color: #ff6033;
+   color: #fff;
+   border: none;
+   border-radius: 0;
 }
 #about {
    background-color: #00c4c4;
@@ -52,6 +84,41 @@ h1{
    text-align: center;
 }
 
+#gallery{
+   background-color: #ffe92f;
+}
+#gallery img{
+   max-width: 100%;
+}
+#subscribe{
+   background: url(../img/subscribe-img.png) center no-repeat;
+}
+#subscribe .row{
+   padding: 0;
+}
+#subscribe .content{
+   padding: 10% 10%;
+}
+#blog{
+   background-color: #b07cf7;
+   color: #fefefe;
+}
+#blog .post-blog{
+/*   display: inline-block;*/
+   overflow: hidden;
+}
+#blog img{
+   transition: all 0.5s ease;
+   
+}
+#blog a:hover img{
+   transform: scale(1.1);
+}
+#contact{
+   background: url(../img/footer-img.png) center no-repeat;
+}
+
+
 footer{
    color: #b9b9b9;
    background-color: #262626;
@@ -61,6 +128,7 @@ footer .row{
 }
 footer span{
    color: #ff2b58;
+   font-weight: bolder;
 }
 
 
@@ -70,14 +138,24 @@ footer span{
    .about{
       text-align: center;
    }
-   .row{
-      padding: 2%;
+   .row, #subscribe .content{
+      padding: 5%;
+   }
+      footer div, footer .text-right{
+      padding: 0.2em;
+      text-align: center;
+   }
+      .post-blog {
+      margin: 0 auto;
+      max-width: 375px;
    }
 }
 
 @media (max-width: 768px){
-   footer div, footer .text-right{
-      padding: 0.2em;
-      text-align: center;
+   body{
+      font-size: 12px;
    }
+   .row, #subscribe .content{
+         padding: 2%;
+      }
 }

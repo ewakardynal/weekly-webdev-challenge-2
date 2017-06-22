@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <!--   Bootstrap-->
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <!--   Fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+   <!--   CSS-->
    <link rel="stylesheet" href="css/style.css">
+   <!--   Fancybox-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 </head>
 <body>
   <div class="container-fluid">
@@ -25,15 +32,20 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
       </div>
       </nav>
       <div class="row">
-       <div class="col-md-4">
-          <h1><strong>Fresh life</strong></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, provident.</p>
+       <div class="col-md-5 col-sm-6 col-xs-8">
+          <h1>Fresh Life</h1>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <a class="btn btn-default" href="#about" role="button">Get free now</a>
        </div>
        </div>
     </section>
@@ -41,7 +53,7 @@
       <div class="row">
          <div class="col-md-6 col-sm-12"><img src="img/about-img.png" alt="" class="img-responsive center-block"></div>
          <div class="col-md-6 col-sm-12 about">
-            <h1>About Us</h1>
+            <h2>About Us</h2>
             <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
 
             <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
@@ -63,30 +75,175 @@
             </div>
           </div>
           <div class="col-md-6">
-            <h1>Our Services</h1>
+            <h2>Our Services</h2>
              <img src="img/services-img.png" alt="" class="img-responsive center-block">
           </div>
        </div>
     </section>
-    <section id="gallery"></section>
-    <section id="subscribe"></section>
-    <section id="blog"></section>
-    <section id="contact"></section>
+    <section id="gallery">
+       <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+             <h2>Gallery</h2>
+             <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-8">
+             <a data-fancybox="gallery" href="img/gallery-img1.png"><img src="img/gallery-img1.png" alt="">
+             </a>
+          </div>
+          <div class="col-md-4">
+             <a data-fancybox="gallery" href="img/gallery-img2.png"><img src="img/gallery-img2.png" alt=""></a>
+             <a data-fancybox="gallery" href="img/gallery-img3.png"><img src="img/gallery-img3.png" alt=""></a>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-6"><a data-fancybox="gallery" href="img/gallery-img4.png"><img src="img/gallery-img4.png" alt=""></a></div>
+          <div class="col-md-6"><a data-fancybox="gallery" href="img/gallery-img5.png"><img src="img/gallery-img5.png" alt=""></a></div>
+       </div>
+       <button type="button" class="btn btn-default center-block">View more</button>
+    </section>
+    <section id="subscribe">
+      <div class="content">
+       <div class="row">
+          <div class="col-md-6 col-sm-8 col-xs-10">
+             <h3>Subscribe To Us</h3>
+             <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+       </div>
+       <div class="row">
+         <form class="form-inline">
+          <div class="col-md-6 col-sm-6 col-xs-10">
+           <div class="form-group">
+             <input type="email" class="form-control" placeholder="Your email address" required>
+           </div>
+           </div>
+           <div class="col-md-2 col-sm-2 col-xs-10" >
+           <button type="submit" class="btn btn-default">Subscribe</button>
+           </div>
+         </form>
+       </div>
+       </div>
+    </section>
+    <section id="blog">
+       <div class="row">
+          <div class="col-md-6 col-md-offset-3 title">
+             <h2>Blog</h2>
+             <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+          </div>
+       </div>
+          <div class="row">
+             <div class="col-md-4 col-sm-12 ">
+               <div class="post-blog">
+                <a href="#">
+                     <img src="img/blog-img1.png" alt="" class="img-responsive">
+                     <span class="post-date"></span>
+                     <span class="post-title">
+                      <h3>Growing Food and a "Thirst" for Innowation</h3>
+                     </span></a>
+                     </div>
+             </div>
+             <div class="col-md-4 col-sm-12">
+               <div class="post-blog">
+                <a href="#">
+                     <img src="img/blog-img2.png" alt="" class="img-responsive">
+                     <span class="post-date"></span>
+                     <span class="post-title">
+                      <h3>Growing Food and a "Thirst" for Innowation</h3>
+                     </span></a>
+                </div>
+             </div>
+             <div class="col-md-4 col-sm-12">
+                <div class="post-blog">
+                <a href="#">
+                     <img src="img/blog-img3.png" alt="" class="img-responsive">
+                     <span class="post-date"></span>
+                     <span class="post-title">
+                      <h3>Growing Food and a "Thirst" for Innowation</h3>
+                     </span></a>
+                </div>
+             </div>
+             <button type="button" class="btn btn-default center-block">View more</button>
+          </div>
+    </section>
+    <section id="contact">
+      <div class="row">
+         <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 title">
+            <h2>Contact</h2>
+            <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+         </div>
+      </div>
+       <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <form>
+            <div class="form-group">
+               <input type="text" class="form-control" placeholder="Your name..." required>
+            </div>
+            <div class="form-group">
+               <input type="email" class="form-control" placeholder="Your email..." required>
+            </div>
+            <div class="form-group">
+               <input type="tel" class="form-control" placeholder="Your phone number..." required>
+            </div>
+            <textarea class="form-control" rows="11" placeholder="Your massage..."></textarea>
+            <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6 col-sm-6">
+             <p><strong>ADDRESS</strong><br>123 City name. Street. City. Country</p>
+             <p><strong>EMAIL</strong><br>cahee@domain.com</p>
+             <p><strong>PHONE</strong><br>+012 345 6789</p>
+          </div>
+       </div>
+    </section>
     <footer>
-        <div class="row footer">
-            <div class="col-md-4 col-sm-4 .col-xs-12">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
                <p>&copy; 2015 Company. All right reserved.</p>
             </div>
-            <div class="col-md-4 col-sm-4 .col-xs-12">
+            <div class="col-md-4 col-sm-12">
                <a href="#"><img src="img/logo-small.png" alt="" class="img-responsive center-block"></a>
                </div>
-            <div class="col-md-4 col-sm-4 .col-xs-12" >
-               <p class="text-right">Made with <spn>love</spn> by Auskteez</p>
+            <div class="col-md-4 col-sm-12" >
+               <p class="text-right">Made with <span>love</span> by Auskteez</p>
             </div>
          </div>
     </footer>
      
   </div>
+
+   <!--   Fancybox-->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+  <!--  Bootstrap-->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
+   <script>
+      $().fancybox({
+      selector : '[data-fancybox="gallery"]',
+      thumbs   : false,
+      hash     : false,
+      });
+
+      $(".main-slider").slick({
+      slidesToShow   : 3,
+      slidesToScroll : 3,
+      infinite   : true,
+      dots       : false,
+      arrows     : false,
+      responsive : [
+      {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+      }
+      ]
+      });
+   </script>
 </body>
 </html>
