@@ -91,6 +91,7 @@ h3{
    background-color: #ee5022;
 }
 
+
 #about {
    background-color: #00c4c4;
    color: #fff;
@@ -126,10 +127,13 @@ h3{
    display: -o-flex;
    display: flex;
    align-items: center;
-/*   position: relative;*/
-   margin-bottom: 1.5em;
+   margin: 0 10% 1.5em 10%;
+   -webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.6);
+   box-shadow: inset hoff voff blur color;
 }
-
+.box h4{
+   font-weight: 700;
+}
 .box-title{
    width: 80%;
    text-align: center;   
@@ -139,7 +143,7 @@ h3{
    position: absolute;
    top: 0px;
    left: 0%;
-   border-left: 1px solid #333;
+   border-left: 1px solid #9d9d9d;
    height: 100%;
    
 }
@@ -157,6 +161,7 @@ h3{
 }
 #gallery img{
    width: 100%;
+   padding-bottom: 2em;
 }
 #gallery .btn{
    background-color: #5585a2;
@@ -267,6 +272,9 @@ box-shadow: 0 0 5px rgba(133,168,27,.6);
    opacity: 1;
    border-left: 3px solid #355b82;
 }
+#contact form{
+   margin-right: 2em;
+}
 #contact input::-webkit-input-placeholder, #contact textarea::-webkit-input-placeholder{color: #fff;}
 
 #contact input:-moz-placeholder, #contact textarea:-moz-placeholder{color: #fff;}
@@ -274,6 +282,10 @@ box-shadow: 0 0 5px rgba(133,168,27,.6);
 #contact input::-moz-placeholder, #contact textarea::-moz-placeholder{color: #fff;}
 
 #contact input:-ms-input-placeholder, #contact textarea:-ms-input-placeholder{color: #fff;}
+
+#contact .col-text p{
+   margin-left: 5em;
+}
 
 footer{
    color: #b9b9b9;
