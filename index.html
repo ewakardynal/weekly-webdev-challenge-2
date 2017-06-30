@@ -14,7 +14,6 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 </head>
 <body>
-  <div class="container-fluid">
     <section id="home">
       <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -41,26 +40,32 @@
     </div><!-- /.navbar-collapse -->
       </div>
       </nav>
+      <div class="container">
       <div class="row">
-       <div class="col-md-5 col-sm-6 col-xs-8">
+       <div class="col-xxs-12 col-xs-8 col-sm-6 col-md-5">
           <h1>Fresh Life</h1>
           <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <a class="btn btn-default" href="#about" role="button">Get free now</a>
+          <a class="btn btn-default" href="#" role="button">Get free now</a>
+       </div>
        </div>
        </div>
     </section>
     <section id="about">
+     <div class="container">
       <div class="row">
-         <div class="col-md-6 col-sm-12"><img src="img/about-img.png" alt="" class="img-responsive center-block"></div>
-         <div class="col-md-6 col-sm-12 about">
+         <div class="col-md-6 col-md-push-6">
             <h2>About Us</h2>
             <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
             <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
          </div>
+         <div class="col-md-6 col-md-pull-6">
+            <img src="img/about-img.png" alt="" class="img-responsive center-block">
+         </div>
+       </div>
        </div>
     </section>
     <section id="services">
+      <div class="container">
        <div class="row">
           <div class="col-md-6">
              <div class="box">
@@ -93,32 +98,35 @@
              <img src="img/services-img.png" alt="" class="img-responsive center-block">
           </div>
        </div>
+      </div>
     </section>
     <section id="gallery">
-       <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-             <h2>Gallery</h2>
-             <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       <div class="container">
+          <div class="row">
+             <div class="col-md-6 col-md-offset-3 text-center">
+                <h2>Gallery</h2>
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </div>
           </div>
-       </div>
-       <div class="row">
-          <div class="col-md-8">
-             <a data-fancybox="gallery" href="img/gallery-img1.png"><img src="img/gallery-img1.png" alt="">
-             </a>
+          <div class="row">
+             <div class="col-md-8">
+                <a data-fancybox="gallery" href="img/gallery-img1.png"><img src="img/gallery-img1.png" alt="">
+                </a>
+             </div>
+             <div class="col-md-4">
+                <a data-fancybox="gallery" href="img/gallery-img2.png"><img src="img/gallery-img2.png" alt=""></a>
+                <a data-fancybox="gallery" href="img/gallery-img3.png"><img src="img/gallery-img3.png" alt=""></a>
+             </div>
           </div>
-          <div class="col-md-4">
-             <a data-fancybox="gallery" href="img/gallery-img2.png"><img src="img/gallery-img2.png" alt=""></a>
-             <a data-fancybox="gallery" href="img/gallery-img3.png"><img src="img/gallery-img3.png" alt=""></a>
+          <div class="row">
+             <div class="col-md-6"><a data-fancybox="gallery" href="img/gallery-img4.png"><img src="img/gallery-img4.png" alt=""></a></div>
+             <div class="col-md-6"><a data-fancybox="gallery" href="img/gallery-img5.png"><img src="img/gallery-img5.png" alt=""></a></div>
           </div>
+          <button type="button" class="btn btn-default center-block">View more</button>
        </div>
-       <div class="row">
-          <div class="col-md-6"><a data-fancybox="gallery" href="img/gallery-img4.png"><img src="img/gallery-img4.png" alt=""></a></div>
-          <div class="col-md-6"><a data-fancybox="gallery" href="img/gallery-img5.png"><img src="img/gallery-img5.png" alt=""></a></div>
-       </div>
-       <button type="button" class="btn btn-default center-block">View more</button>
     </section>
     <section id="subscribe">
-      <div class="content">
+    <div class="container">
        <div class="row">
           <div class="col-md-6 col-sm-8 col-xs-10">
              <h3>Subscribe To Us</h3>
@@ -137,9 +145,10 @@
            </div>
          </form>
        </div>
-       </div>
+   </div>
     </section>
     <section id="blog">
+    <div class="container">
        <div class="row">
           <div class="col-md-6 col-md-offset-3 title">
              <h2>Blog</h2>
@@ -182,8 +191,10 @@
              </div>
              <button type="button" class="btn btn-default center-block">View more</button>
           </div>
+   </div>
     </section>
     <section id="contact">
+    <div class="container">
       <div class="row">
          <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 title">
             <h2>Contact</h2>
@@ -212,9 +223,11 @@
              <p><strong>PHONE</strong><br>+012 345 6789</p>
           </div>
        </div>
+   </div>
     </section>
     <footer>
-        <div class="row">
+    <div class="container">
+<!--        <div class="row">-->
             <div class="col-md-4 col-sm-12">
                <p>&copy; 2015 Company. All right reserved.</p>
             </div>
@@ -224,10 +237,10 @@
             <div class="col-md-4 col-sm-12" >
                <p class="text-right">Made with <span>love</span> by Auskteez</p>
             </div>
-         </div>
+<!--         </div>-->
+   </div>
     </footer>
      
-  </div>
 
    <!--   Fancybox-->
   <script

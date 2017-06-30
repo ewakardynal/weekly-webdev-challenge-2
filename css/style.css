@@ -17,7 +17,11 @@ body{
    font-family: 'Raleway', sans-serif;
    font-size: 15px;
    letter-spacing: 0.2px;
-
+}
+.container{
+   padding-right: 5%;
+   padding-left: 5%; 
+ 
 }
 h1{
    font-size: 3em;
@@ -33,16 +37,15 @@ h3{
    font-size: 2em;
    font-weight: 700;
 }
-
-.row{
-   padding: 5% 10%;
-   margin: 0;
+section{
+   padding: 5%;
 }
-
-.container-fluid {
-   max-width: 1500px;
-   background-color: crimson;
-   padding: 0;
+footer{
+/*   padding: 1em 5em;*/
+}
+.row{
+   margin-right: 0;
+   margin-left: 0;
 }
 
 .title{
@@ -97,11 +100,12 @@ h3{
    color: #fff;
 }
 
-.about{
+
+#about .row>div:first-child{
    padding-left: 5%;
    margin-top: 5%;
+   margin-bottom: 10%;
 }
-
 
 #services {
    background-color: #70bfff;
@@ -173,12 +177,7 @@ h3{
 #subscribe{
    background: url(../img/subscribe-img.png) center no-repeat;
 }
-#subscribe .row{
-   padding: 0;
-}
-#subscribe .content{
-   padding: 10% 10%;
-}
+
 #subscribe .btn{
    background-color: #96b92c;
  }
@@ -275,6 +274,9 @@ box-shadow: 0 0 5px rgba(133,168,27,.6);
 #contact form{
    margin-right: 2em;
 }
+#contact textarea{
+   resize: none;
+}
 #contact input::-webkit-input-placeholder, #contact textarea::-webkit-input-placeholder{color: #fff;}
 
 #contact input:-moz-placeholder, #contact textarea:-moz-placeholder{color: #fff;}
@@ -302,13 +304,20 @@ footer span{
 
 
 /************ MEDIA QUERY ******************/
-@media (max-width: 991px){
-   .about{
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+   section{
+      padding: ;
+   }
+   .container{
+      padding-right: 2%;
+      padding-left: 2%;
+   }
+   #about .row>div:first-child {
       text-align: center;
    }
-   .row, #subscribe .content{
-      padding: 5%;
-   }
+
    footer div, footer .text-right{
       padding: 0.2em;
       text-align: center;
@@ -320,17 +329,51 @@ footer span{
 
 }
 
-@media (max-width: 768px){
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+   section{
+      padding-left: 2%;
+      padding-right: 2%;
+   }
    h2{
       font-size: 3em;
    }
-   .row, #subscribe .content{
-         padding: 2%;
-      }
-      #subscribe .btn{
-   width: 100%;
+   
+   #home{
+      height: 100vh;
+   }
+   #subscribe .btn{
+      width: 100%;
 }
-      #contact{
+   #contact{
       text-align: center;
    }
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+   section{
+   padding: 10% 2%;
+}
+   .col-xxs-12{
+      width: 100%;
+      text-align: center;
+   }
+   .btn{
+      width: 100%;
+   }
+   .box{
+      margin: 5% 0;
+   }
+
+
+}
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
 }
