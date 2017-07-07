@@ -79,6 +79,36 @@ section{
 #contact .row:first-child{
    padding-bottom: 3em;
 }
+
+.navbar{
+   padding: 1em 0.5em;
+   background-color: #fefefe;
+}
+.navbar a{
+   padding: 0;
+}
+.navbar a img{
+   max-height: 100%;
+   margin-left: 1em;
+}
+.navbar-default{
+   border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a{
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #000;
+   border-top: 3px solid transparent;
+}
+.navbar-default .navbar-nav>li>a:hover{
+   border-top: 3px solid #ff6033;
+   color: #000;
+}
+.navbar-default .navbar-collapse{
+   text-align: center;
+   border-color: transparent;
+}
+
 #home{
    background: url(../img/header-img.png) center no-repeat;
    height: 100vh;
@@ -339,7 +369,10 @@ footer span{
    h2{
       font-size: 3em;
    }
-   
+   .navbar-default .navbar-nav>li>a:hover{
+      border-top: 3px solid transparent;
+      color: #ff6033;
+   }
    #home{
       height: 700px;
       padding-top: 30%;
