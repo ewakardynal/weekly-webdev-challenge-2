@@ -20,8 +20,7 @@ body{
 }
 .container{
    padding-right: 5%;
-   padding-left: 5%; 
- 
+   padding-left: 5%;
 }
 h1{
    font-size: 3em;
@@ -38,20 +37,15 @@ h3{
    font-weight: 700;
 }
 section{
-   padding: 5%;
-}
-footer{
-/*   padding: 1em 5em;*/
+   padding-top: 5%;
+   padding-bottom: 5%;
+   padding-right: auto;
+   padding-left: auto;
 }
 .row{
    margin-right: 0;
    margin-left: 0;
 }
-
-.title{
-   text-align: center;
-}
-
 .btn{
    text-transform: uppercase;
    width: 200px;
@@ -64,12 +58,12 @@ footer{
    border-radius: 0;
    box-shadow: 2px 2px 5px rgba(0,0,0,.7);
 }
-.btn.btn-default:hover,  .btn.btn-default:focus{
+.btn.btn-default:hover, 
+.btn.btn-default:focus{
    color: #fff;
    box-shadow: 2px 2px 5px rgba(0,0,0,.7);
    outline: none;
 }
-
 .btn.btn-default:active{
    color: #fff;
    position: relative;
@@ -80,11 +74,15 @@ footer{
 .form-control{
    border-radius: 0;
 }
-
+#gallery .row:first-child,
+#blog .row:first-child,
+#contact .row:first-child{
+   padding-bottom: 3em;
+}
 #home{
    background: url(../img/header-img.png) center no-repeat;
-   height: 1000px;
-   padding-top: 20%;
+   height: 100vh;
+   padding-top: 300px;
 }
 #home .btn{
    background-color: #ff6033;
@@ -94,17 +92,18 @@ footer{
    background-color: #ee5022;
 }
 
-
 #about {
    background-color: #00c4c4;
    color: #fff;
 }
-
-
-#about .row>div:first-child{
+#about .row>div:last-child{
    padding-left: 5%;
    margin-top: 5%;
    margin-bottom: 10%;
+}
+#about .row>div:first-child{
+   margin-top: 5%;
+   margin-bottom: 5%;
 }
 
 #services {
@@ -112,7 +111,7 @@ footer{
 }
 .services-img{
    position: relative;
-   padding: 0 5%;
+   padding-left: 5%;
 }
 #services h2{
    position: absolute;
@@ -131,7 +130,7 @@ footer{
    display: -o-flex;
    display: flex;
    align-items: center;
-   margin: 0 10% 1.5em 10%;
+   margin: 1.5em 8% 0 8%;
    -webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.6);
    box-shadow: inset hoff voff blur color;
 }
@@ -140,7 +139,6 @@ footer{
 }
 .box-title{
    width: 80%;
-   text-align: center;   
 }
 .box-img::after{
    content: '';
@@ -149,7 +147,6 @@ footer{
    left: 0%;
    border-left: 1px solid #9d9d9d;
    height: 100%;
-   
 }
 .box-img{
    width: 20%;
@@ -177,7 +174,6 @@ footer{
 #subscribe{
    background: url(../img/subscribe-img.png) center no-repeat;
 }
-
 #subscribe .btn{
    background-color: #96b92c;
  }
@@ -193,7 +189,7 @@ footer{
    border: 1px solid #000;
 }
 #subscribe input:focus{
-box-shadow: 0 0 5px rgba(133,168,27,.6);
+   box-shadow: 0 0 5px rgba(133,168,27,.6);
    border: 1px solid #85a81b;
 }
 
@@ -292,10 +288,9 @@ box-shadow: 0 0 5px rgba(133,168,27,.6);
 footer{
    color: #b9b9b9;
    background-color: #262626;
+   padding: 2em 0
 }
-footer .row{
-   padding: 2% 10%;
-}
+
 footer span{
    color: #ff2b58;
    font-weight: bold;
@@ -307,17 +302,19 @@ footer span{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
-   section{
-      padding: ;
-   }
    .container{
       padding-right: 2%;
       padding-left: 2%;
    }
    #about .row>div:first-child {
-      text-align: center;
+      padding-top: 5%;
    }
-
+   .box{
+      margin: 1em 0 0 0;
+   }
+   .services-img img{
+      padding-top: 8%;
+   }
    footer div, footer .text-right{
       padding: 0.2em;
       text-align: center;
@@ -335,21 +332,48 @@ footer span{
       padding-left: 2%;
       padding-right: 2%;
    }
+   .container{
+      padding-right: 0;
+      padding-left: 0;
+   }
    h2{
       font-size: 3em;
    }
    
    #home{
-      height: 100vh;
+      height: 700px;
+      padding-top: 30%;
+   }
+   #about .row>div:last-child {
+      text-align: center;
+   }
+   #about .row>div:first-child {
+      padding-top: 0;
+   }
+   #about img, #services img{
+      max-width: 60%;
+   }
+   .box{
+      margin: 1.5em 10%;
    }
    #subscribe .btn{
       width: 100%;
-}
+   }
+   #subscribe{
+      text-align: center;
+   }
    #contact{
       text-align: center;
    }
+   #contact form{
+      margin-right: 0;
+      margin-bottom: 3em;
+   }
+   #contact .col-text p{
+      margin-left: 0;
+      color: #fff;
+   }
 }
-
 
 
 /* Extra Small Devices, Phones */ 
@@ -357,7 +381,7 @@ footer span{
    section{
    padding: 10% 2%;
 }
-   .col-xxs-12{
+   #home .row div:first-child{
       width: 100%;
       text-align: center;
    }
@@ -367,13 +391,5 @@ footer span{
    .box{
       margin: 5% 0;
    }
-
-
-}
-
-
-
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
 
 }
