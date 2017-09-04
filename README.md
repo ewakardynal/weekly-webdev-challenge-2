@@ -2,7 +2,7 @@
 
 <p>PSD to HTML</p>
 
-<h2>Technologiels:</h2>
+<h2>Technologies:</h2>
 <ul>
   <li>HTML5</li>
   <li>CSS</li>
